@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --h1: 'Cinzel', serif;
+    --fuenteCont: 'Roboto', sans-serif;
+    --colorcyt: rgb(226, 90, 0);
+}
+.menu{
+    border: 1px solid black;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    background: rgb(37, 37, 37);
+    left: -20%;
+    transition: all 0.3s linear;
+}
+.menu.active{
+    left: 0;
+}
+.menu h2{
+    font-family: var(--h1);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu li{
+    list-style: none;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    font-family: var(--fuenteCont);
+    cursor: pointer;
+    color: #fff;
+}
+.menu li:hover{
+    color: var(--colorcyt);
+}
+.btn{
+    position: relative;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    left: 350px;
+    font-size: 18px;
+    top: 20px;
+}
+.nav-container{
+    text-align: center;
+    position: relative;
+}
+.a{
+    text-decoration: none;
+    color:  rgb(68, 68, 68) ;
+}
+
+
+.nav-container h1{
+    font-family: var(--h1);
+    color: rgb(68, 68, 68);
+}
+.div-search{
+    position: absolute;
+    right: 50px;
+}
+
+/*Grafico*********************************************/
+
+.botones{
+    width: 100%;
+    text-align: center;
+    margin: 70px 0px 20px 0px;
+}
+
+.botones button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background: rgb(82, 167, 82);
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--fuenteCont);
+}
+.botones button:active{
+    background: green;
+}
+
+.contenedor{
+    width: 100%;
+    height: 500px;
+    
+    display: flex;
+    justify-content: space-around;
+    background: black;
+}
+.contenedor .canvas-cont{
+    width: 70%;
+}
+.contenedor .canvas-cont h1{
+    color: #fff;
+    text-align: center;
+    font-family: var(--fuenteCont);
+    padding: 10px;
+}
+.contenedor .canvas-cont p{
+    color: #fff;
+    text-align: center;
+    font-family: var(--fuenteCont);
+    padding: 10px   ;
+}
+.contenedor img{
+    width: 30%;
+    box-shadow: 0px 0px 3px 0.2px rgb(83, 83, 83);
+}
+
+/*******/
+
+.contenedor2{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+}
+.contenedor2 .canvas-cont{
+    width: 70%;
+}
+.contenedor2 .canvas-cont h1{
+    color: #fff;
+    text-align: center;
+    font-family: var(--fuenteCont);
+    padding: 10px;
+}
+.contenedor2 .canvas-cont p{
+    color: #fff;
+    text-align: center;
+    font-family: var(--fuenteCont);
+    padding: 10px   ;
+}
+.contenedor2 img{
+    width: 30%;
+    box-shadow: 0px 0px 3px 0.2px rgb(83, 83, 83);
+}
+.container_2020{
+    
+    display: none;
+}
+
+.container_2020.activo{
+    display: block;
+}
+.container_2019.activo{
+    display: none;
+}
+

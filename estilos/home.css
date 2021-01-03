@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --h1: 'Cinzel', serif;
+    --fuenteCont: 'Roboto', sans-serif;
+    --colorcyt: rgb(226, 90, 0);
+}
+.menu{
+    border: 1px solid black;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    background: rgb(37, 37, 37);
+    left: -20%;
+    transition: all 0.3s linear;
+}
+.menu.active{
+    left: 0;
+}
+.menu h2{
+    font-family: var(--h1);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu li{
+    list-style: none;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    font-family: var(--fuenteCont);
+    cursor: pointer;
+    color: #fff;
+}
+.menu li:hover{
+    color: var(--colorcyt);
+}
+
+.btn{
+    position: relative;
+    color: black;
+    padding: 20px;
+    cursor: pointer;
+    left: 350px;
+    font-size: 18px;
+    top: 20px;
+}
+.nav-container{
+    text-align: center;
+    position: relative;
+}
+
+.a{
+    text-decoration: none;
+    color:  rgb(68, 68, 68) ;
+}
+
+
+.nav-container h1{
+    font-family: var(--h1);
+    color: rgb(68, 68, 68);
+}
+.nav-container p{
+    font-family: var(--h1);
+    color: rgb(68, 68, 68);
+}
+.div-search{
+    position: absolute;
+    right: 50px;
+}
+
+/*Souvenir***********************************************************************************/
+
+.list-proveedores {
+    font-family: var(--h1);
+    border: 1px solid black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background: rgb(224, 224, 224);
+    border: none;
+    box-shadow: 0px 0px 5px 2px rgb(201, 201, 201);
+}
+.list-proveedores h1{
+    margin-left: 2%;
+    color: rgb(68, 68, 68);
+}
+
+.list-proveedores .btn_pro{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.list-proveedores .btn_pro button{
+    padding: 5px;
+    font-family: var(--fuenteCont);
+    outline: none;
+    background:var(--colorcyt) ;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.list-proveedores .btn_pro button:hover{
+    background: rgb(196, 78, 0);
+}
+
+.souvenir{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    padding: 0px 20px;
+}
+.card{
+    
+    
+    box-shadow: 0px 0px 3px 0.2px rgb(83, 83, 83);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.card h4{
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--fuenteCont);
+}
+.card p{
+    text-align: center;
+    font-weight: lighter;
+    font-family: var(--fuenteCont);
+}
+
+/*FOTTER****************************************************************************************************/
+
+/*Fin Souevnir**********************************************************************************************/
+
+@media screen and (max-width: 1120px){
+    .souvenir{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .btn{
+        left: 900px;
+    }
+    .menu.active{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 946px){
+    .btn{
+        left: 800px;
+    }
+}
+@media screen and (max-width: 850px){
+    .btn{
+        left: 700px;
+    }
+}
+@media screen and (max-width: 850px){
+    .btn{
+        left: 600px;
+    }
+    .menu.active{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width: 645px){
+    .btn{
+        left: 500px;
+    }
+    
+}
+@media screen and (max-width: 550px){
+    .btn{
+        left: 450px;
+    }
+    .menu.active{
+        width: 50%;
+    }
+}  
+@media screen and (max-width: 490px){
+    .btn{
+        left: 390px;
+    }
+    .menu.active{
+        width: 60%;
+        position: absolute;
+    }
+   
+}
+@media screen and (max-width: 447px){
+    .btn{
+        left: 330px;
+    }
+}
+@media screen and (max-width: 390px){
+    .btn{
+        left: 300px;
+    }
+    .menu.active{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .btn{
+        left: 270px;
+    }
+    .menu.active{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 746px){
+    .souvenir{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media screen and (max-width: 550px){
+    .souvenir{
+        grid-template-columns: 1fr;
+    }
+}
+
